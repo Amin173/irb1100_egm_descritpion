@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="robot_controller_id" default=""/>
+  <arg name="robot_controller_id" default="192.168.0.107"/>
 
   <node pkg="irb1100_egm_description" type="rc_description_irb1100_example_node" name="rc_description_irb1100_example_node">
     <param name="robot_controller_id" value="$(arg robot_controller_id)"/>
