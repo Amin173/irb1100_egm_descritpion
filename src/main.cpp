@@ -88,7 +88,7 @@ bool GetRobotControllerDescription(
 
   // Add joints to robot.
   auto id{robot_controller_id.empty() ? "" : robot_controller_id + "_"};
-  auto joint_name{id + "joint_"};
+  auto joint_name{id + "rob1_"};
   SetJoint(robot->add_standardized_joints(), joint_name + std::to_string(1), -230.0, 230.0);
   SetJoint(robot->add_standardized_joints(), joint_name + std::to_string(2), -115.0, 113.0);
   SetJoint(robot->add_standardized_joints(), joint_name + std::to_string(3), -205.0, 55.0);
